@@ -30,7 +30,6 @@
 ## node liri.js spotify-this-song "The eye of the tiger"
 ![](images/song.png)
 
-
 # Get Movie Info
 ## Retrieves movie information for a movie:
 

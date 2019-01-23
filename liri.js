@@ -4,7 +4,7 @@ var axios = require("axios");
 var moment = require("moment");
 var fs = require("fs");
 var keys = require("./keys");
-
+//key for spotify
 var spotify = new Spotify(keys.spotify);
 
 var pick = function(type, userPick) {
@@ -25,7 +25,7 @@ var pick = function(type, userPick) {
       console.log("liri does not recognize this");
   }
 };
-
+//bands in town api
 var getBands = function(artist) {
   var queryURL =
     "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
@@ -48,7 +48,7 @@ var getBands = function(artist) {
     }
   });
 };
-
+//spotify api 
 let getSongs = function(songName) {
   spotify.search(
     {
@@ -59,9 +59,10 @@ let getSongs = function(songName) {
       if (error) {
         return console.log(error);
       }
-
+//only 5 songs come up in the search 
       for (var i = 0; i < 5; i++) {
         // console.log(data.tracks.items[i])
+        //items i want to show up on my search 
         console.log("artists: " + data.tracks.items[i].artists[0].name);
         console.log("song name: " + data.tracks.items[i].name);
         console.log("prview url: " + data.tracks.items[i].preview_url);
@@ -71,7 +72,7 @@ let getSongs = function(songName) {
     }
   );
 };
-
+//omdb api 
 var getMovie = function(movie) {
   var queryURL =
     "http://www.omdbapi.com/?t=" +
@@ -94,6 +95,7 @@ var getMovie = function(movie) {
     console.log("----------");
   });
 };
+
 
 function doWhatItSays() {
   fs.readFile("random.txt", "utf8", function(error, data) {
