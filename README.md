@@ -27,14 +27,18 @@
 # Get Song Info
 ## Retrieves song information for a track:
 
-## node liri.js spotify-this-song "American Girl"
+## node liri.js spotify-this-song "The eye of the tiger"
+![](images/song.png)
+
 
 # Get Movie Info
 ## Retrieves movie information for a movie:
 
-## node liri.js movie-this "Star Wars"
+## node liri.js movie-this "Frozen"
+![](images/movie.png)
 
 ## Get Random Info
 ## Gets random text inside a file and does what it says:
 
 # node liri.js  do-what-it-says
+![](do-what-it-saiys)
