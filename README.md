@@ -41,4 +41,4 @@
 ## Gets random text inside a file and does what it says:
 
 # node liri.js  do-what-it-says
-![](do-what-it-saiys)
+![](images/do-what-it-saiys.png)
