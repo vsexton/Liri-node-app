@@ -1,6 +1,6 @@
 # Liri-node-app
 
-##LIRI is a Language Interpretation and Recognition Interface. Use LIRI to get your latest tweets, find out about a song, or a movie, bands or just choose a random action from your own random file.
+##LIRI is a Language Interpretation and Recognition Interface. Use LIRI to find out about a song, or a movie, bands or just choose a random action from your own random file.
 
 #Installs
 ##The package.json lists dependent node packages, but for your convenvice, these are the ones to install.
@@ -21,8 +21,9 @@
 #Get Started
 ##Here's a quick rundom of the commands you can use in LIRI.
 
-#Get Tweets
-##Retrieves up to your latest 20 tweets:
+#Get Concerts
+##Find concerts neer you concert-this Pink
+
 
 #Get Song Info
 ##Retrieves song information for a track:
@@ -37,4 +38,4 @@
 ##Get Random Info
 ##Gets random text inside a file and does what it says:
 
-#node liri.js do-what-it-says
+#node liri.js  do-what-it-says
