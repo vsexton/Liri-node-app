@@ -17,13 +17,12 @@
 #FS
 ##npm install fs
 
-
 #Get Started
 ##Here's a quick rundom of the commands you can use in LIRI.
 
 #Get Concerts
-##Find concerts neer you concert-this Pink
-
+##Find concerts neer you concert-this 
+![](images/concert.png)
 
 #Get Song Info
 ##Retrieves song information for a track:

@@ -28,9 +28,7 @@ var pick = function(type, userPick) {
 
 var getBands = function(artist) {
   var queryURL =
-    "https://rest.bandsintown.com/artists/" +
-    artist +
-    "/events?app_id=codingbootcamp";
+    "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
   axios.get(queryURL).then(function(response) {
     for (var i = 0; i < response.data.length; i++) {
       console.log("venue name: " + response.data[i].venue.name);
@@ -85,8 +83,7 @@ var getMovie = function(movie) {
     console.log("Year the movie came out: " + response.data.Year);
     console.log("IMBD Rating of the movie: " + response.data.imdbRating);
     console.log("Actors: " + response.data.Actors);
-    console.log(
-      "Country where the move was produced: " + response.data.Country
+    console.log("Country where the move was produced: " + response.data.Country
     );
     console.log("Language of the Movie: " + response.data.language);
     console.log("Plot: " + response.data.plot);
